@@ -1,8 +1,11 @@
 class SessionsController < ApplicationController
+
+  # Make a new session for a user
   def new
     @user = User.new
   end
 
+  # Create new session on login
   def create
     user_params = params.require(:user).permit(:email, :password)
     @user = User.confirm(user_params)
@@ -16,6 +19,7 @@ class SessionsController < ApplicationController
     end
   end
 
+  # Destroy current session on logout
   def destroy
     logout
     flash[:notice] = "Successfully Logged Out!"
