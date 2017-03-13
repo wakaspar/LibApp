@@ -14,3 +14,26 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background: lightgreen;
+}
+
+.jumbotron {
+  border-radius: 50px;
+  box-shadow: -5px 5px maroon;
+  font-family: 'Ranga', sans-serif;
+  background: salmon;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: -2px 2px skyblue;
+}
+
+.jumbotron h1 {
+  font-family: 'Griffy', sans-serif;
+  text-shadow: -1px 1px white;
+}
+
+.jumbotron small {
+  text-shadow: -1px 1px black;
+}
