@@ -5,11 +5,11 @@
     There are currently <%= @users.length %> users signed up!
   </div>
 
-  <!--<% if !current_user %>-->
+  <% if !current_user %>
     <hr>
     <div class="col-xs-offset-3 btn-lg btn-warning my-btn"><%= link_to "Create Account", new_user_path %></div>
     <br>
     <div class="col-xs-offset-3 btn-lg btn-info my-btn"><%= link_to "Log In", login_path %></div>
-  <!--<% end %>-->
+  <% end %>
 
 </div>

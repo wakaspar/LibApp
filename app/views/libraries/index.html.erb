@@ -1,13 +1,11 @@
 <div class="container jumbotron">
 
-
-<% @libraries.each do |library| %>
-    <h1 class="library"><%= link_to library.name, library_path(library) %></h1>
-
-    <% if current_user %>
-      <%= button_to "Join", library_users_path(library) %>
-    <% end %>
-  <br>
-<% end %>
+  <% @libraries.each do |library| %>
+    <h1><%= link_to library.name, library_path(library) %></h1>
+      <% if current_user %>
+        <%= button_to " Join ", library_users_path(library) %>
+      <% end %>
+    <br>
+  <% end %>
 
 </div>

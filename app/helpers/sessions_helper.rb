@@ -7,8 +7,9 @@ module SessionsHelper
 
   # checks if a user is logged in or not
   def logged_in?
-    @current_user = session[:user_id] = nil
-    redirect_to new_session_path
+    if current_user == nil
+      redirect_to new_session_path
+    end
   end
 
   # validates current user

@@ -1,3 +1,10 @@
 <div class="container jumbotron">
   <h1>Welcome to <%= @library.name %></h1>
+
+  <small>Floors: <%= @library.floor_count %></small>
+  <br>
+  <small>Area: <%= @library.floor_area %> sq.ft.</small>
+
+  <p><%= link_to "<-- back", libraries_path %></p>
+
 </div>
