@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container jumbotron">
 
-<h2>Login<h2>
+Login
 
 <%= form_for @user, url: '/sessions', method: 'post' do |f| %>
   <div class="row">
-    <%= f.text_field :email, placeholder:'Email' %>
+    <div class="my-input"><%= f.text_field :email, placeholder:' Email' %></div>
   </div>
   <div class="row">
-    <%= f.password_field :password, placeholder:'Password' %>
+    <div class="my-input"><%= f.password_field :password, placeholder:' Password' %></div>
   </div>
   <div class="container">
     <br>

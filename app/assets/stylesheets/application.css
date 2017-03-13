@@ -16,7 +16,7 @@
  */
 
 body {
-  background: lightgreen;
+  background: MidnightBlue;
 }
 
 .jumbotron {
@@ -36,4 +36,34 @@ body {
 
 .jumbotron small {
   text-shadow: -1px 1px black;
+}
+
+.my-nav {
+  display: inline;
+  font-family: 'Ranga', sans-serif;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.my-nav-bar {
+
+}
+
+.my-btn {
+  border-radius: 50px;
+  font-size: 1.5em;
+  align-items: center;
+  height: 100px;
+  color: black;
+  max-width: 500px;
+}
+
+.my-input {
+  padding: 5px;
+}
+
+.flash-msg {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 45px;
+  text-align: center;
 }

@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
 
   get '/libraries', to: 'libraries#index'
-  get '/libraries/:id', to: 'libraries#show', as: 'library'
   get 'libraries/new', to: 'libraries#new', as: 'new_library'
+  get '/libraries/:id', to: 'libraries#show', as: 'library'
   post '/libraries', to: 'libraries#create'
 
   get '/users/:user_id/libraries', to: 'library_users#index', as: 'user_libraries'

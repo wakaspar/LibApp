@@ -1,6 +1,10 @@
+<div class="container jumbotron">
+
+    
+
 <% @libraries.each do |library| %>
   <div class="container">
-    <h3><%= library.name %></h3>
+    <h3><%= link_to library.name %></h3>
 
     <% if current_user %>
       <%= button_to "Join", library_users_path(library) %>
@@ -8,3 +12,5 @@
   </div>
   <br>
 <% end %>
+
+</div>

@@ -1,23 +1,27 @@
-<div class="container">
+<div class=" container jumbotron">
 
-<h2>Sign Up!</h2>
+<h1>Sign Up for LibApp! <small> it's simple and easy!</small></h1>
 
 <%= form_for @user do |f| %>
+
   <div class="row">
-    <%= f.text_field :first_name, placeholder:'First Name' %>
+    <div class="my-input"><%= f.text_field :first_name, placeholder:' First Name' %></div>
+  </div>
+
+  <div class="row">
+    <div class="my-input"><%= f.text_field :last_name, placeholder:' Last Name' %></div>
+  </div>
+
+  <div class="row">
+    <div class="my-input"><%= f.text_field :email, placeholder:' Email' %></div>
+  </div>
+
+  <div class="row">
+    <div class="my-input"><%= f.password_field :password, placeholder:' Password' %></div>
   </div>
   <div class="row">
-    <%= f.text_field :last_name, placeholder:'Last Name' %>
-  </div>
-  <div class="row">
-    <%= f.text_field :email, placeholder:'Email' %>
-  </div>
-  <div class="row">
-    <%= f.password_field :password, placeholder:'Password' %>
-  </div>
-  <div class="container">
     <br>
-    <%= f.submit 'Sign Up!' %>
+  <%= f.submit 'Sign Up!' %>
   </div>
   <% end %>
 

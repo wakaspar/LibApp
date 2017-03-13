@@ -1,12 +1,19 @@
+<div class="container jumbotron">
+
+<h1>Add A New Library!</h1>All we need is some basic information:
+
 <%= form_for @library do |f| %>
-  <div class="container">
-    <%= f.text_field :name, placeholder: "Name" %>
+  <div class="row">
+    <div class="my-input"><%= f.text_field :name, placeholder: " Name" %></div>
   </div>
-  <div class="container">
-    <%= f.number_field :floor_count, placeholder: "Floor Count" %>
+  <div class="row">
+    <div class="my-input"><%= f.number_field :floor_count, placeholder: " Floor Count" %></div>
   </div>
-  <div class="container">
-    <%= f.number_field :floor_area, placeholder: "Floor Area" %>
+  <div class="row">
+    <div class="my-input"><%= f.number_field :floor_area, placeholder: " Floor Area" %></div>
   </div>
+  <br>
   <%= f.submit %>
 <% end %>
+
+</div>
