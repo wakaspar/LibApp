@@ -1,24 +1,15 @@
-# README
+# Lib App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Sypnosis
+Oof.  Rails.  Not my strong suit.  I went slow and made sure that I understood how things were supposed to work, and stuff still broke.  Go figure.  Managed to kinda figure out how to implement CSS over the top of Ruby, but then started reading the SASS docs.  Next time, I'll just set up SASS files instead.
 
-Things you may want to cover:
+### Installation
+Ruby on Rails, ```rails s``` to get your server up.
 
-* Ruby version
+check out ```localhost3000``` in your browser
 
-* System dependencies
+### Credits
+My dog, Indigo
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### License
+shareware
