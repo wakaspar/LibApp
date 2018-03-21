@@ -1,5 +1,7 @@
 <div class="container jumbotron">
 
+  <div class="btn-lg btn-info my-btn"><%= link_to " Make A New Library ", new_library_path %></div>
+
   <% @libraries.each do |library| %>
     <h1><%= link_to library.name, library_path(library) %></h1>
       <% if current_user %>
@@ -7,5 +9,5 @@
       <% end %>
     <br>
   <% end %>
-
+  <p><%= link_to "<-- back", root_path %></p>
 </div>

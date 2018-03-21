@@ -1,8 +1,17 @@
 <div class="container jumbotron">
   <h1>Welcome, <%= @user.first_name + " " + @user.last_name %></h1>
-  <% if current_user %>
-      <div class="col-xs-offset-3 btn-lg btn-success my-btn"><%= link_to "Libraries", libraries_path %></div>
-      <br>
-      <div class="col-xs-offset-3 btn-lg btn-warning my-btn"><%= link_to "My Libraries", user_libraries_path(user) %></div>
+  <% if current_user == @user %>
+    <div class="col-xs-offset-3 btn-lg btn-success my-btn"><%= link_to "Libraries", libraries_path %></div>
+    <br>
+    <div class="col-xs-offset-3 btn-lg btn-warning my-btn"><%= link_to "My Libraries", user_libraries_path(current_user) %></div>
+    <br>
+    <%= button_to " Delete Account ", {action:"destroy", id: @user.id},
+                                      method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% else %>
+    <div class="col-xs-offset-3 btn-lg btn-warning my-btn"><%= link_to  "#{@user.first_name}'s Libraries", user_libraries_path(current_user) %></div>
   <% end %>
+
+
+
+
 </div>

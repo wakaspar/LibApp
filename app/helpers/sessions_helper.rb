@@ -8,7 +8,7 @@ module SessionsHelper
   # checks if a user is logged in or not
   def logged_in?
     if current_user == nil
-      redirect_to new_session_path
+      redirect_to root_path
     end
   end
 

@@ -1,5 +1,7 @@
 class LibrariesController < ApplicationController
 
+  before_action :set_library, only: [:show, :update, :destroy, :edit]
+
   # Display all libraries
   def index
     @libraries = Library.all
@@ -18,7 +20,7 @@ class LibrariesController < ApplicationController
 
   # Show a library page
   def show
-    @library = Library.find_by_id(params[:id])
+    set_library
   end
 
   private
@@ -27,4 +29,9 @@ class LibrariesController < ApplicationController
   def library_params
     params.require(:library).permit(:name, :floor_count, :floor_area)
   end
+
+  def set_library
+    @library = Library.find(params[:id])
+  end
+
 end
